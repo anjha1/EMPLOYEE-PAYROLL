@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Payroll</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">EMPLOYEE PAYROLL</div>
+  <a href="/add" class="add-btn">+ Add User</a>
+</div>
+
+<div class="container">
+  <h3>Employee Details</h3>
+
+  <table>
+    <tr>
+      <th>NAME</th>
+      <th>GENDER</th>
+      <th>DEPARTMENT</th>
+      <th>SALARY</th>
+      <th>START DATE</th>
+      <th>ACTIONS</th>
+    </tr>
+
+    <% employees.forEach(emp => { %>
+    <tr>
+      <td>
+        <div class="profile">
+          <img src="<%= emp.image %>" />
+          <span><%= emp.name %></span>
+        </div>
+      </td>
+      <td><%= emp.gender %></td>
+      <td>
+        <% emp.department.forEach(dep => { %>
+          <span class="badge"><%= dep %></span>
+        <% }) %>
+      </td>
+      <td>₹ <%= emp.salary.toLocaleString() %></td>
+      <td><%= emp.startDate %></td>
+      <td class="actions">
+        <a href="/delete/<%= emp.id %>">
+          <i class="fa-solid fa-trash"></i>
+        </a>
+        <a href="/edit/<%= emp.id %>">
+          <i class="fa-solid fa-pen"></i>
+        </a>
+      </td>
+    </tr>
+    <% }) %>
+  </table>
+
+</div>
+
+</body>
+</html>

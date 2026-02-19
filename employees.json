@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1700000000002,
+    "name": "Mohammad Salman Iqbal Shaikh",
+    "gender": "Male",
+    "department": [
+      "HR"
+    ],
+    "salary": 2000,
+    "startDate": "15 Jan 2020",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "notes": "Sales Team Lead"
+  },
+  {
+    "id": 1700000000003,
+    "name": "Bubere Qais Mohammad Muzaffar",
+    "gender": "Female",
+    "department": [
+      "Engineer",
+      "Finance"
+    ],
+    "salary": 30000,
+    "startDate": "10 Mar 2021",
+    "image": "https://randomuser.me/api/portraits/men/2.jpg",
+    "notes": "Backend Developer"
+  },
+  {
+    "id": 1700000000004,
+    "name": "Neha Sharma",
+    "gender": "Female",
+    "department": [
+      "HR"
+    ],
+    "salary": 15000,
+    "startDate": "02 Aug 2022",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "notes": "Recruitment Specialist"
+  },
+  {
+    "id": 1700000000005,
+    "name": "Rohit Verma",
+    "gender": "Male",
+    "department": [
+      "Engineer",
+      "Sales"
+    ],
+    "salary": 40000,
+    "startDate": "12 Dec 2018",
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "notes": "Full Stack Developer"
+  }
+]
